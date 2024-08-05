@@ -1,0 +1,344 @@
+@charset "utf-8";
+
+body {
+  font-family: "Noto Sans JP";
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #000;
+  font-size: 14px;
+  position: relative;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+p {
+  color: #fff;
+}
+/* inner */
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: auto;
+}
+/* header */
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 9998;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__title {
+  font-family: "Hiragino Kaku Gothic ProN" 、 "ヒラギノ角ゴ ProN" 、
+    "Hiragino Kaku Gothic Pro" 、 "ヒラギノ角ゴ Pro";
+}
+.header__bg_color {
+  font-size: 13px;
+  color: #fff;
+  background-color: #333;
+}
+
+/* main */
+.main_all {
+  max-width: 100vw;
+}
+/* ホワイトボードデザイン */
+#textareaContainer {
+  padding-top: 40px;
+  margin-left: 6%;
+  height: 900px;
+  width: 90%;
+  position: relative;
+  border: #333 1px solid;
+  border-bottom: none;
+}
+/* 左の付箋ボタン */
+.sidebar {
+  position: fixed;
+  top: 150px;
+  left: 8px;
+  z-index: 100;
+}
+
+.btn__design {
+  position: absolute;
+  left: 30px;
+  top: 3px;
+  padding: 5px;
+  background-color: #f00;
+  border-radius: 50px;
+  box-shadow: 2px 2px 5px #333, 4px 4px 8px rgb(0 0 0 / 24%);
+  z-index: 9990;
+}
+
+#black_btn {
+  background-color: #333;
+  color: #fff;
+  text-shadow: 4px 4px 8px rgb(255 255 255 / 60%);
+}
+#pink_btn {
+  background-color: #ff99cc;
+  color: #fff;
+  text-shadow: 4px 4px 8px rgb(30 30 30 / 60%);
+}
+#blue_btn {
+  background-color: #33cccc;
+  color: #fff;
+  text-shadow: 4px 4px 8px rgb(30 30 30 / 60%);
+}
+#green_btn {
+  background-color: #99cc00;
+  color: #fff;
+  text-shadow: 4px 4px 8px rgb(30 30 30 / 60%);
+}
+button {
+  border: none;
+}
+/* ボタン装飾 */
+
+.btn {
+  position: relative;
+  margin: 10px 0;
+  padding: 35px;
+  border-radius: 10px;
+  border: 1px #333 solid;
+  background-color: #fff;
+  color: #000;
+  box-shadow: -4px -4px 4px #fff, 4px 4px 8px rgb(0 0 0 / 35%);
+}
+.btn:hover {
+  box-shadow: -2px -2px 4px #fff, 2px 2px 4px rgb(0 0 0 / 24%);
+  cursor: pointer;
+}
+.btn:active {
+  background-color: #ebebeb;
+  box-shadow: inset 4px 4px 8px rgb(0 0 0 / 16%);
+}
+
+/* ここまでボタン */
+
+.nav {
+  position: fixed;
+  top: 35px;
+  right: 15px;
+}
+.nav_content {
+  width: 80%;
+  height: 100%;
+  position: fixed;
+  top: 35px;
+  left: 100%;
+  z-index: 99;
+  background: #363a3f;
+  transition: 0.5s;
+}
+.content__reset {
+  width: 20%;
+  height: 880px;
+  position: fixed;
+  top: 35px;
+  left: -20%;
+  z-index: 9999;
+}
+
+p {
+  margin: 4px 0;
+  font-size: 18px;
+}
+
+/* ログイン・ログアウト */
+#login {
+  background-color: #333;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+}
+
+#logout {
+  margin-left: 10px;
+  padding: 0;
+}
+#logout:hover {
+  cursor: pointer;
+}
+.logout__image {
+  width: 20px;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+}
+/* チャットエリア */
+
+.chatall {
+  margin-left: 20px;
+  position: relative;
+}
+.markx {
+  width: 30px;
+  position: absolute;
+  top: 35px;
+  right: 23px;
+}
+.markx:hover {
+  cursor: pointer;
+}
+
+.chat {
+  width: 40px;
+  margin: 30px 0 0 0;
+}
+.chat:hover {
+  cursor: pointer;
+}
+
+#output {
+  overflow: scroll;
+  margin: 20px;
+  height: 700px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+#output::-webkit-scrollbar {
+  display: none;
+}
+
+.textform {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+}
+
+.chatarea {
+  width: 100%;
+  max-width: 900px;
+  height: 35px;
+  border: none;
+  resize: none;
+  padding: 5px;
+  padding-top: 6px;
+  padding-bottom: 0;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #40444c;
+  box-shadow: 4px 4px 8px #333, 4px 4px 8px rgb(0 0 0 / 24%);
+}
+
+.profile {
+  width: 260px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.username {
+  width: 20px;
+  font-weight: bold;
+}
+.usertext {
+  width: auto;
+  text-align: left;
+  font-weight: normal;
+}
+.usericon {
+  width: 40px;
+  border-radius: 45px;
+  margin-right: 10px;
+}
+.iconflex {
+  display: flex;
+  align-items: center;
+}
+.usertextui {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: flex-start;
+}
+
+/* 付箋デザイン */
+
+.color__white {
+  width: 170px;
+  height: 100px;
+  border: #000 1px solid;
+  resize: none;
+  touch-action: none;
+  padding: 10px;
+  border-radius: 10px;
+  left: 0;
+  top: 50px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.color__black {
+  width: 170px;
+  height: 100px;
+  background-color: #333;
+  color: #fff;
+  resize: none;
+  padding: 10px;
+  margin: 2px 0;
+  border-radius: 10px;
+  border: 1px #333 solid;
+  position: absolute;
+}
+
+.color__pink {
+  width: 170px;
+  height: 100px;
+  background-color: #ff99cc;
+  color: #fff;
+  resize: none;
+  padding: 10px;
+  margin: 2px 0;
+  border-radius: 10px;
+  border: 1px #333 solid;
+  position: absolute;
+}
+
+.color__blue {
+  width: 170px;
+  height: 100px;
+  background-color: #33cccc;
+  color: #fff;
+  padding: 10px;
+  margin: 2px 0;
+  border-radius: 10px;
+  resize: none;
+  border: 1px #333 solid;
+  position: absolute;
+}
+
+.color__green {
+  width: 170px;
+  height: 100px;
+  background-color: #99cc00;
+  color: #fff;
+  margin: 2px 0;
+  padding: 10px;
+  resize: none;
+  border-radius: 10px;
+  border: 1px #333 solid;
+  position: absolute;
+}
+
+/* 付箋機能 */
+
+.remove {
+  background-color: #1e74e7;
+}

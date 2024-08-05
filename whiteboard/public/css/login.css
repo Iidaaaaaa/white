@@ -1,0 +1,39 @@
+@charset "utf-8";
+body {
+  font-family: "Noto Serif JP", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #000;
+  font-size: 18px;
+}
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: auto;
+}
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.title {
+  margin: 14% auto;
+  text-align: center;
+}
+button {
+  padding: 25px 60px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+button:hover {
+  background-color: #009999;
+  color: #fff;
+  transition: 0.4s;
+}

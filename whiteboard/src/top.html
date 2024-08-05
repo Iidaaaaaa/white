@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webapp</title>
+    <link rel="icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="header__bg_color">
+      <div class="inner">
+        <div class="header">
+          <h1 class="header__title">Whiteboard</h1>
+
+          <div class="profile">
+            <img
+              id="image"
+              style="border-radius: 50px"
+              width="30px"
+              alt="icon"
+            />
+            <p><span id="username"></span>でログイン中</p>
+            <button id="logout">
+              <img
+                class="logout__image"
+                src="/images/logout.svg"
+                alt="logout"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main_all">
+        <div class="sidebar">
+          <button class="btn" id="addTextareaButton">
+            <span class="btn__design"></span></button
+          ><br />
+          <button class="btn" id="black_btn">
+            <span class="btn__design"></span></button
+          ><br />
+          <button class="btn" id="pink_btn">
+            <span class="btn__design"></span></button
+          ><br />
+          <button class="btn" id="blue_btn">
+            <span class="btn__design"></span></button
+          ><br />
+          <button class="btn" id="green_btn">
+            <span class="btn__design"></span>
+          </button>
+        </div>
+        <form>
+          <div id="textareaContainer"></div>
+        </form>
+
+        <div class="nav">
+          <img
+            class="chat"
+            src="/public/images/chat.svg"
+            alt="chat"
+            width="35px"
+          />
+          <div class="content__reset"></div>
+          <nav class="nav_content">
+            <div class="chatall">
+              <div id="output"></div>
+              <form>
+                <div class="textform">
+                  <textarea
+                    class="chatarea"
+                    id="text"
+                    maxlength="20"
+                    value="1"
+                    rows="4"
+                    cols="10"
+                  ></textarea>
+                </div>
+              </form>
+            </div>
+            <img class="markx" src="/public/images/x.png" alt="x" />
+          </nav>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <script src="//cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+      <script src="/public/js/intaract.js"></script>
+      <script type="module" src="/public/js/main.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </footer>
+  </body>
+</html>
